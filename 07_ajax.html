@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="../../_lib/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../_lib/js/jquery-3.3.1.min.js"><\/script>');
+    </script>
+     <script src="../scripts/07_ajax.js"></script>
+     <script src="../../_lib/js/lib.js"></script>
+</head>
+<body>
+    <h1>Ajax</h1>
+    <div id="ajax">
+        <ul id="liste">
+            <li><a href="#">Anfrage  fragment.html</a></li>
+            <li><a href="../../_lib/data/pathfinder.html">Anfrage - load - pathfinder.html</a></li>
+            <li><a href="#">Anfrage - get - pathfinder.html</a></li>
+            <li><a href="#">Anfrage - getJSON - person.json</a></li>
+            <li><a href="#">Anfrage - get - kontakt.xml</a></li>
+            <li><a href="#">Anfrage - get - get_post.php</a></li>
+        </ul>
+    </div>
+    <form action="../../_lib/php/get_post.php" method="post">
+        <label for="Eingabe">Eingabe</label>
+        <input type="text" id="eingabe" name="eingabe">
+        <input type="submit" value="Absenden">
+    </form>
+    <div id="ausgabe"></div>
+    <noscript>
+      <p>When you have eliminated the <b>JavaScript</b>, whatever remains must be an empty page.</p>  
+    </noscript>
+</body>
+</html>
